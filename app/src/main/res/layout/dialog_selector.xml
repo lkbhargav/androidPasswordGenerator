@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingRight="50sp"
+        android:paddingLeft="50sp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lowerCheck"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/lowercase"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="3dp"
+                android:id="@+id/lowerLabel"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/upperCheck"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/uppercase"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="3dp"
+                android:id="@+id/upperLabel"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/numberCheck"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/number"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="3dp"
+                android:id="@+id/numberLabel"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/specialCheck"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/specChars"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="3dp"
+                android:id="@+id/specialLabel"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/length"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="3dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/passwordText"
+            android:fontFamily="sans-serif"
+            android:hint="8"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="@string/choose_special_characters_optional"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="3dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/example"
+            android:inputType="text"
+            android:fontFamily="sans-serif"
+            android:id="@+id/specialText"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/note_default_is_amp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="@string/submit"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlack"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:id="@+id/submitButton"
+        android:fontFamily="sans-serif"
+        android:textSize="25sp"
+        android:layout_marginBottom="25dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Clear all!"
+        android:layout_gravity="center"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlack"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:id="@+id/clearAll"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="25dp" />
+
+        </LinearLayout>
+</ScrollView>
+</LinearLayout>

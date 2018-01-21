@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Password Generator</string>
+    <string name="show_dialog">Show Dialog</string>
+    <string name="lowercase">Lowercase</string>
+    <string name="uppercase">Uppercase</string>
+    <string name="number">Numbers</string>
+    <string name="specChars">Special Characters</string>
+    <string name="submit">Submit</string>
+    <string name="note_default_is_amp"><![CDATA[Default: !@#$%^&*()-=+_~`?/[]{},.;:]]></string>
+    <string name="example">Example: !@#(-=)*</string>
+    <string name="choose_special_characters_optional">Special characters (Optional)</string>
+    <string name="generate_password">Generate Password</string>
+    <string name="length">Password Length: </string>
+    <string name="password_generator">Password Generator</string>
+    <string name="password_goes_in_here">Password goes in here</string>
+    <string name="set_rule">Set Rule</string>
+</resources>

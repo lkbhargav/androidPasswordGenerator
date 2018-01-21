@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_generator"
+                android:fontFamily="sans-serif"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/passwordRules"
+                android:text=""/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/helpButton"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image_buttons"
+                    android:src="@drawable/help" />
+
+                <Button
+                    android:id="@+id/showDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:background="@color/colorBlack"
+                    android:text="@string/set_rule"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25sp"
+                    android:textAllCaps="false"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/shareButton"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image_buttons"
+                    android:src="@drawable/share" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:background="@drawable/back"
+                android:hint="@string/password_goes_in_here"
+                android:fontFamily="sans-serif"
+                android:textColorHighlight="@color/colorPrimary"
+                android:id="@+id/resultView"
+                android:textIsSelectable="true"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/generatePass"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:background="@color/colorBlack"
+                android:text="Generate Password"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                android:textAllCaps="false"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:onClick="generatePassword"
+                android:layout_marginBottom="25sp"/>
+
+            <Button
+                android:id="@+id/clipboard"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:background="@color/colorBlack"
+                android:text="Copy to clipboard"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                android:textAllCaps="false"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:onClick="copyToClipboard"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
